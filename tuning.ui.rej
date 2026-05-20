@@ -1,0 +1,19 @@
+--- tuning.ui	2024-11-08 17:55:26.563196524 +0530
++++ tuning.ui	2024-11-09 11:44:25.409765438 +0530
+@@ -45,7 +45,7 @@
+     </rect>
+    </property>
+    <property name="styleSheet">
+-    <string notr="true">image: url(:/images/nextarrow.png);
++    <string notr="true">image: url(:/images/nextbutton.png);
+ background-color:transparent;
+ border:none;</string>
+    </property>
+@@ -64,6 +64,7 @@
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
++image: url(:/images/notconnected.png);
+ border:none;</string>
+    </property>
+    <property name="text">

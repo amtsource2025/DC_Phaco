@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>footpedal</class>
+ <widget class="QDialog" name="footpedal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(4, 118, 151);</string>
+  </property>
+  <widget class="QComboBox" name="right_footcom">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>210</y>
+     <width>281</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20pt &quot;Ubuntu&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+
+border-radius:20px;
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="left_footcom">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>100</y>
+     <width>281</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20pt &quot;Ubuntu&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+
+border-radius:20px;
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="foot_img">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>140</y>
+     <width>281</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>291</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/footimg.png);
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="bleft_footcom">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>320</y>
+     <width>281</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20pt &quot;Ubuntu&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+
+border-radius:20px;
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="bright_footcom">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>440</y>
+     <width>281</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20pt &quot;Ubuntu&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+
+border-radius:20px;
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="savebut">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>590</y>
+     <width>541</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;Ubuntu Condensed&quot;;
+background-color: rgb(255, 255, 255);
+border-radius:20px;
+border:3px solid black;</string>
+   </property>
+   <property name="text">
+    <string>SAVE FOR ALL SURGEONS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backbut">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>111</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+image: url(:/images/backbuttonarrow.png);
+border:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>70</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string>Foot Pedal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="right_lab">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>260</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>TOP RIGHT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="left_lab">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>TOP LEFT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bleft_lab">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>350</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>BOTTOM LEFT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bright_lab">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>470</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>BOTTOM RIGHT</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

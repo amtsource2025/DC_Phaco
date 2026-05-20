@@ -1,0 +1,3625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doctor</class>
+ <widget class="QDialog" name="doctor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(18, 78, 102);
+
+
+</string>
+  </property>
+  <widget class="QComboBox" name="BottomRFoot">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>630</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="BottomRight">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>630</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string>Bottom Right</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BackBut">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>650</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/backbuttonarrow.png);
+border:none;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="BottomLeft">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>570</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string>Bottom Left</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="LeftFoot">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>450</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Right">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>510</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string>Right</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VitBut">
+   <property name="geometry">
+    <rect>
+     <x>303</x>
+     <y>260</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 35px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 3px solid black;
+    font: bold;
+}
+
+QPushButton:focus {
+    outline: none;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>VIT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="circle">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>90</y>
+     <width>261</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:3px solid black;
+border-radius:120px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FootPedalSettings">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>660</y>
+     <width>281</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Ubuntu Condensed&quot;;
+background-color:transparent;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>FOOTPEDAL SETTINGS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="IABut">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>170</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 35px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 3px solid black;
+    font: bold;
+}
+
+QPushButton:focus {
+    outline: none;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>I/A</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="RightFoot">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>510</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="BottomLFoot">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>570</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Increment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Decrement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Reflux</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Continuous Irrigation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Power ON/OFF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PDM</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="PhacoBut">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>170</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 35px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 3px solid black;
+    font: bold;
+}
+
+QPushButton:focus {
+    outline: none;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PHACO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Surgeon">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>91</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+image: url(:/images/doctor.png);
+background-color:transparent;
+border-radius:20px;
+border:2px solid black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Left">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>450</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string>Left</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="SelectSurgeon">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Surgeon 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Surgeon 2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Surgeon 3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Surgeon 4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Surgeon 5</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>10</y>
+     <width>811</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(162, 128, 137);</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="Diathermy">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(83, 104, 120);</string>
+    </property>
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>180</y>
+       <width>241</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="text">
+      <string>100</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DiaPowMax">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>190</y>
+       <width>311</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>POWER MAXIMUM</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 9px; /* Diameter of the circular chunk */
+    height: 9px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 4px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>DiaPowMax</zorder>
+    <zorder>lineEdit_6</zorder>
+    <zorder>progressBar</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(83, 104, 120);</string>
+    </property>
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QPushButton" name="EpinBut_phaco">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>241</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 171, 191);</string>
+     </property>
+     <property name="text">
+      <string>Sculpt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="QuadBut_phaco">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>0</y>
+       <width>221</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 171, 191);</string>
+     </property>
+     <property name="text">
+      <string>Quad</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ChopBut_phaco">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 171, 191);</string>
+     </property>
+     <property name="text">
+      <string>Chop</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ScupltBut_phaco">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>0</y>
+       <width>231</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 171, 191);</string>
+     </property>
+     <property name="text">
+      <string>Epinucleus</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>831</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(83, 104, 120);</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+      <widget class="QLabel" name="VacMax_phaco">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>140</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum (Max)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>10</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="VacModeCom_phaco">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>360</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);border-radius:20px;
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>140</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(mmHg)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>20</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(ml/min)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>130</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(%)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="VacMode_phaco">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>370</y>
+         <width>391</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Aspiration (Max)</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowModeCom_phaco">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>500</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);border-radius:20px;
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMethod_phaco">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>440</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Method</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>250</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowMethodCom_phaco">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>430</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);border-radius:20px;
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Continuous</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocupulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocuburst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Single burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Multi burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cold phaco</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMode_phaco">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>500</y>
+         <width>381</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="PowMax_phaco">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power (Max)</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>310</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_7">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+      <widget class="QLabel" name="VacMax_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>140</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum (Max)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>10</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="VacModeCom_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>360</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);border-radius:20px;
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_9">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>140</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(mmHg)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_10">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>20</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(ml/min)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>130</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_11">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(%)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="VacMode_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>370</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_12">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Aspiration (Max)</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowModeCom_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>500</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);border-radius:20px;
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMethod_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>440</y>
+         <width>281</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Method</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_10">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>250</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowMethodCom_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>430</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255,255,255);border-radius:20px;
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Continuous</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocupulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocuburst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Single burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Multi burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cold Phaco</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMode_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>500</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="PowMax_phaco_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power (Max)</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_9">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_10">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>310</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_8">
+      <attribute name="title">
+       <string>Page</string>
+      </attribute>
+      <widget class="QLabel" name="VacMax_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>140</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum (Max)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_13">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>10</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="VacModeCom_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>360</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_13">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>140</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(mmHg)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_14">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>20</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(ml/min)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_14">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>130</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_15">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(%)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="VacMode_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>370</y>
+         <width>391</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_16">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>331</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Aspiration (Max)</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowModeCom_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>500</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMethod_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>440</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Method</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_15">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>250</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowMethodCom_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>430</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Continuous</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocupulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocuburst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Single burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Multi burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cold phaco</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMode_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>500</y>
+         <width>331</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="PowMax_phaco_3">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power (Max)</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_11">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_12">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_13">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>310</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_9">
+      <attribute name="title">
+       <string>Page</string>
+      </attribute>
+      <widget class="QLabel" name="VacMax_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>140</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum (Max)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_16">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>10</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="VacModeCom_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>360</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_17">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>140</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(mmHg)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_18">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>20</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(ml/min)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_17">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>130</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_19">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>(%)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="VacMode_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>370</y>
+         <width>391</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Vaccum Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AspMax_phaco_20">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Aspiration (Max)</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowModeCom_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>500</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Surgeon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMethod_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>440</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Method</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_18">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>250</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PowMethodCom_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>430</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Continuous</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocupulse</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ocuburst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Single burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Multi burst</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cold phaco</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="PowMode_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>490</y>
+         <width>351</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power Mode</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="PowMax_phaco_4">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>260</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Power (Max)</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_4">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>310</y>
+         <width>701</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <zorder>tabWidget_2</zorder>
+    <zorder>EpinBut_phaco</zorder>
+    <zorder>QuadBut_phaco</zorder>
+    <zorder>ChopBut_phaco</zorder>
+    <zorder>ScupltBut_phaco</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(83, 104, 120);</string>
+    </property>
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>60</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_7">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>160</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_11">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>360</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_12">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>460</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AspMax_ia">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Aspiration Max                               :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="VacMax_ia">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>160</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Vaccum Max                                    :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="VacMode2_ia">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>260</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Vaccum Mode                                  :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AspMax2_ia">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>360</y>
+       <width>411</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Aspiration Max                               :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="VacMax_ia_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>470</y>
+       <width>381</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Vaccum Max                                     :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="VacMode3_ia">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>570</y>
+       <width>381</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Vaccum Mode                                   :</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="VacMode1_iacom">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>260</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Surgeon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Panel</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="VacMode2_iacom">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>570</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Surgeon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Panel</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="Cortex">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+background-color: rgb(255, 255, 255);
+font:bold;
+border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string>Cortex</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Piolish">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>310</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Polish</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AspMax_phaco_5">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>160</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>(mmHg)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AspMax_phaco_6">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>70</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>(ml/min)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AspMax_phaco_7">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>360</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>(ml/min)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AspMax_phaco_8">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>460</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>(mmHg)</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_14">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>510</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_15">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>410</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_16">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>210</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_17">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>AspMax_ia</zorder>
+    <zorder>VacMax_ia</zorder>
+    <zorder>Piolish</zorder>
+    <zorder>VacMax_ia_2</zorder>
+    <zorder>VacMode3_ia</zorder>
+    <zorder>AspMax2_ia</zorder>
+    <zorder>VacMode2_ia</zorder>
+    <zorder>lineEdit_11</zorder>
+    <zorder>lineEdit_12</zorder>
+    <zorder>lineEdit_5</zorder>
+    <zorder>lineEdit_7</zorder>
+    <zorder>VacMode1_iacom</zorder>
+    <zorder>VacMode2_iacom</zorder>
+    <zorder>AspMax_phaco_5</zorder>
+    <zorder>AspMax_phaco_6</zorder>
+    <zorder>AspMax_phaco_7</zorder>
+    <zorder>AspMax_phaco_8</zorder>
+    <zorder>progressBar_14</zorder>
+    <zorder>progressBar_15</zorder>
+    <zorder>progressBar_16</zorder>
+    <zorder>progressBar_17</zorder>
+    <zorder>Cortex</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(83, 104, 120);</string>
+    </property>
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>60</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CutMax_vit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>80</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font:20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Maximum                                         :</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="CutMode_vitCom">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>180</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Surgeon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Panel</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="CutMode_vit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>170</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font:20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Mode                                                 :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_19">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>280</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="VacMax_vit">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>290</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font:20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Maximum                                           :</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="VacMode_VitCom">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>400</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Surgeon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Panel</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="VacMode_vit">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>390</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font:20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Vaccum Mode                                                    :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AspMax_vit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>490</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;font:20pt &quot;Ubuntu Condensed&quot;;
+font:bold;</string>
+     </property>
+     <property name="text">
+      <string>Aspiration Max                                    :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CutRate">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;border-radius:15px;font:bold;
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Cut Rate</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Vaccum">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>220</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Ubuntu Condensed&quot;;
+font:bold;
+background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+     </property>
+     <property name="text">
+      <string>Vaccum</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_19">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>340</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_20">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>540</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_21">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>120</y>
+       <width>701</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 15px; /* Radius for the curve of the progress bar */
+    text-align: center;
+    background: #eee;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #4568dc, stop: 1 #b06ab3);
+    width: 8px; /* Diameter of the circular chunk */
+    height: 8px; /* Diameter of the circular chunk */
+    border-radius: 4px; /* Half of the width/height to make it circular */
+    margin: 1px; /* Space between chunks */
+}
+</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_20">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>470</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(255,255,255);
+border-radius:20px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>170</y>
+       <width>731</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>CutMode_vitCom</zorder>
+    <zorder>CutMode_vit</zorder>
+    <zorder>VacMode_VitCom</zorder>
+    <zorder>CutMax_vit</zorder>
+    <zorder>VacMax_vit</zorder>
+    <zorder>CutRate</zorder>
+    <zorder>AspMax_vit</zorder>
+    <zorder>VacMode_vit</zorder>
+    <zorder>Vaccum</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>lineEdit_19</zorder>
+    <zorder>progressBar_19</zorder>
+    <zorder>progressBar_20</zorder>
+    <zorder>progressBar_21</zorder>
+    <zorder>lineEdit_20</zorder>
+    <zorder>label_6</zorder>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="DiaBut">
+   <property name="geometry">
+    <rect>
+     <x>303</x>
+     <y>90</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 35px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 3px solid black;
+    font: bold;
+}
+
+QPushButton:focus {
+    outline: none;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>DIA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>-10</y>
+     <width>871</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(83, 104, 120);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Select_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;Ubuntu Condensed&quot;;
+background-color:transparent;
+font:25px;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Select Pump :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>10</y>
+     <width>531</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+
+font:15pt &quot;Ubuntu&quot;;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Load All Surgeons</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+background-color: rgb(14, 50, 6);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Peristaltic</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="SaveDiaBut">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>670</y>
+     <width>511</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+
+font:15pt &quot;Ubuntu&quot;;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Save All Values</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>360</y>
+     <width>271</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+image: url(:/images/footswitch_3.png);
+border:none;
+outline:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>461</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Vibration_onoff">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255,255,255);
+font:20pt;
+background-color: rgb(14, 50, 6);
+text-align:left;</string>
+   </property>
+   <property name="text">
+    <string>Vibration OFF</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_vibonoff">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>410</y>
+     <width>61</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid skyblue;
+border-radius:20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;Ubuntu Condensed&quot;;
+background-color:transparent;
+font:25px;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Vibration Mode</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>294</x>
+     <y>165</y>
+     <width>91</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/settings.png);
+background-color: rgb(3, 58, 11);
+border:none;
+border-radius:40px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;Ubuntu Condensed&quot;;
+background-color:transparent;
+font:25px;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Speaker ON/OFF</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButSpeakerOnOff">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255,255,255);
+font:20pt;
+background-color: rgb(14, 50, 6);
+text-align:left;</string>
+   </property>
+   <property name="text">
+    <string>Speaker ON</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_vibonoff_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>530</y>
+     <width>61</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid skyblue;
+border-radius:20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_hp_no">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>555</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;Ubuntu Condensed&quot;;
+background-color:transparent;
+font:25px;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>HP No :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_hp">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>600</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:15px;
+color: rgb(255, 255, 255);
+font:20pt &quot;Ubuntu&quot;;
+font:bold;
+background-color: rgb(14, 50, 6);</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Swap_onoff">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255,255,255);
+font:20pt;
+background-color: rgb(14, 50, 6);
+text-align:left;</string>
+   </property>
+   <property name="text">
+    <string>Swap ON</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;Ubuntu Condensed&quot;;
+background-color:transparent;
+font:25px;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Swap ON/OFF</string>
+   </property>
+  </widget>
+  <zorder>LeftFoot</zorder>
+  <zorder>BottomRFoot</zorder>
+  <zorder>BottomLFoot</zorder>
+  <zorder>RightFoot</zorder>
+  <zorder>Right</zorder>
+  <zorder>Left</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>BottomRight</zorder>
+  <zorder>BottomLeft</zorder>
+  <zorder>tabWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>SelectSurgeon</zorder>
+  <zorder>SaveDiaBut</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>Select_2</zorder>
+  <zorder>Surgeon</zorder>
+  <zorder>circle</zorder>
+  <zorder>VitBut</zorder>
+  <zorder>IABut</zorder>
+  <zorder>PhacoBut</zorder>
+  <zorder>DiaBut</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>FootPedalSettings</zorder>
+  <zorder>Vibration_onoff</zorder>
+  <zorder>lab_vibonoff</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>BackBut</zorder>
+  <zorder>label_5</zorder>
+  <zorder>ButSpeakerOnOff</zorder>
+  <zorder>lab_vibonoff_2</zorder>
+  <zorder>Swap_onoff</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_hp_no</zorder>
+  <zorder>lineEdit_hp</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
