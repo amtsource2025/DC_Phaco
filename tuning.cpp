@@ -472,12 +472,13 @@ int tuning::Tune_Phaco()
        // qDebug()<<"file opend";
 
 
-        hand->phaco_power(100);
+        hand->phaco_power(0);
         usleep(100);
         //hand->phaco_on(0);
 
         hand->emitTuneStartPhaco();
-
+        hand->phaco_on(TUNE_LOWERFREQ_COUNT);
+        //usleep(500000);
         hand->phaco_power(100);usleep(100);
 
         nNoOfCurrentCount=0;
@@ -736,10 +737,15 @@ int tuning::Tune_Phaco()
         ui->ButRTune->setText("Tune Completed.Ready For Phaco");
         hand->emitTuneStopPhaco();
         hand->phaco_off();
+        hand->phaco_power(0);
+        qDebug() << "[TUNING DONE]";
         main->show();
         main->ULTRASONICBUT1();
         main->activategpio();
         main->setTuneMode();
+        hand->phaco_off();          // ADD THIS
+        hand->phaco_power(0);       // ADD THIS - re-zero after setTuneMode
+        qDebug() << "[TUNING DONE] ";
         updateProgress();
         emit sendfreq(nResonantFreqCount);
         emit activatemain();

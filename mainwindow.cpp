@@ -41,6 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
     handler->phaco_off();
     handler->vibrator_off();
     handler->phaco_power(0);
+    handler->convert_dac(0x30, 0);
     handler->fs_count_limit(nfpzero+nfpone+nfptwo);
 
     handler->freq_count(0);
@@ -2029,9 +2030,10 @@ void MainWindow::BACKBUT()
 
     motoroff();
     handler->phaco_off();
+    handler->phaco_power(0);
+    //handler->convert_dac(0x30, 0);
     handler->fs_count_limit(nfpzero+nfpone+nfptwo);
     handler->freq_count(0);
-    handler->phaco_power(0);
     handler->pinchvalve_off();
     handler->safetyvent_off();
     handler->vit_off();
@@ -2195,6 +2197,12 @@ void MainWindow::current(int tab)
 
 //if tune is completed then only
 void MainWindow::setTuneMode() {
+    handler->phaco_off();
+    handler->phaco_power(0);
+    handler->freq_count(0);
+     handler->convert_dac(0x30, 0);                // ADD THIS - reset the frequency count variable
+    qDebug() << "[TUNE COMPLETE] nFreqCount reset to =" << nFreqCount;
+
     QString styleSheet4 = "QLabel {"
                "image: url(:/images/Tuned.png);"
 
@@ -2514,6 +2522,11 @@ modeFound = true;
 
 void MainWindow::disablesetTunemode()
 {
+
+    handler->phaco_off();
+        handler->phaco_power(0);
+        //handler->convert_dac(0x30, 0);  // ADD THIS - zero DAC before tuning
+        handler->freq_count(0);
     QString styleSheet4 = "QLabel {"
                "image: url(:/images/Tuned.png);"
 
@@ -2702,6 +2715,11 @@ vus4=ui->us4vacmode->text();
                     handler->freq_count(0);
                     stopPhacoTracking();
                     handler->phaco_off();
+                    handler->phaco_power(0);
+                    handler->convert_dac(0x30, 0);
+                    qDebug() << "[US1 POS0] range=" << range
+                                     << "nfpzero=" << nfpzero
+                                     << "phaco_off and power(0) called";
                     handler->fs_count_limit(nfpzero+nfpone+nfptwo);
                      us1poweron=false;
                        if(!overallci){
@@ -2924,6 +2942,7 @@ if(vus1 == "Panel"){
                 stopPhacoTracking();
                 handler->phaco_off();
                  handler->phaco_power(0);
+                 handler->convert_dac(0x30, 0);
                  handler->freq_count(0);
                  handler->fs_count_limit(nfpzero+nfpone+nfptwo);
                 ui->label_7->setText("0");
@@ -3167,6 +3186,8 @@ if(vus1 == "Panel"){
                     handler->freq_count(0);
                     stopPhacoTracking();
                     handler->phaco_off();
+                    handler->phaco_power(0);
+                    handler->convert_dac(0x30, 0);
                         handler->fs_count_limit(nfpzero+nfpone+nfptwo);
 
                      us2poweron=false;
@@ -3381,6 +3402,7 @@ beepsound(3);stopPhacoTracking();
                 stopPhacoTracking();
                 handler->phaco_off();
                  handler->phaco_power(0);
+                 handler->convert_dac(0x30, 0);
                  handler->freq_count(0);
                      handler->fs_count_limit(nfpzero+nfpone+nfptwo);
 
@@ -3639,6 +3661,8 @@ stopPhacoTracking();
                     handler->freq_count(0);
                     stopPhacoTracking();
                     handler->phaco_off();
+                    handler->phaco_power(0);
+                    handler->convert_dac(0x30, 0);
                         handler->fs_count_limit(nfpzero+nfpone+nfptwo);
 
                      us3poweron=false;
@@ -3851,6 +3875,7 @@ beepsound(3);
                 stopPhacoTracking();
                 handler->phaco_off();
                  handler->phaco_power(0);
+                 handler->convert_dac(0x30, 0);
                  handler->freq_count(0);
                      handler->fs_count_limit(nfpzero+nfpone+nfptwo);
                      int pro=readsensorvalue();
@@ -4105,6 +4130,8 @@ beepsound(3);
                     handler->freq_count(0);
                     stopPhacoTracking();
                     handler->phaco_off();
+                    handler->phaco_power(0);
+                    handler->convert_dac(0x30, 0);
                         handler->fs_count_limit(nfpzero+nfpone+nfptwo);
 
                      us4poweron=false;
@@ -4318,6 +4345,7 @@ if(us4 == "Panel"){
                 stopPhacoTracking();
                 handler->phaco_off();
                  handler->phaco_power(0);
+                 handler->convert_dac(0x30, 0);
                  handler->freq_count(0);
                      handler->fs_count_limit(nfpzero+nfpone+nfptwo);
 
@@ -7494,6 +7522,7 @@ void MainWindow::on_SETTINGS_BUT_2_clicked()
 
     handler->freq_count(0);
     handler->phaco_power(0);
+    //handler->convert_dac(0x30, 0);
     handler->pinchvalve_off();
     handler->safetyvent_off();
     handler->vit_off();
@@ -7719,6 +7748,7 @@ void MainWindow::on_pushButton_clicked()
         handler->phaco_off();
         handler->freq_count(0);
         handler->phaco_power(0);
+        //handler->convert_dac(0x30, 0);
         handler->pinchvalve_off();
         handler->safetyvent_off();
         handler->vit_off();
