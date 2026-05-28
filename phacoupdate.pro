@@ -13,7 +13,7 @@ CONFIG += c++11 release precompile_header
 #TARGET = iNanoPlusPer_V1.5.7.2.6
 #TARGET = iNanoPlusPer_V1.5.7.2.7
 #TARGET = iNanoPlusPer_V1.5.7.2.9
-TARGET = dcphaco_v8
+TARGET = dcphaco_v7
 QMAKE_CXXFLAGS_RELEASE += -O3 -g0 -DNDEBUG
 
 # The following define makes your compiler emit warnings if you use
